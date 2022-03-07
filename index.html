@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Игра переливания</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="src/sсript.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="src/style.css">
+        
+        <script type="text/javascript">
+            $(document).ready(function () {
+                __COMMON();
+            }) 
+        </script>
+    </head>
+    <body>
+        <h1>Игра переливания</h1>
+        <container class="main">
+            <div class="regulations">
+                <ul>
+                    <li>Даётся емкость варенья объёмом 8 литров</li>
+                    <li>Имеется своя ёмкость различного объёма</li>
+                    <li>доплнительные емкости случайны</li>
+                    <li>Некоторые уров-ни могут быть непроходимы. Предусмотрена перегенарция уровня по кнопке "Пропустить уровень"</li>
+                    <li>Необходимо перелить в свою ёмкость 2 литра, при этом что-бы доплнительные емкости остались пусты</li>
+                </ul>
+            </div>
+            
+            <div class="level-container">
+                <h3>Выберите уровень сложности</h3>
+                <p>От этого будет зависеть отведённое время</p>
+                <div class="choose-level">
+                    <div class="level-button" style="background-color: #80c33d;" data-level="ease">Лёгкий</div>
+                    <div class="level-button" style="background-color: cornflowerblue;" data-level="normal">Средний</div>
+                    <div class="level-button" style="background-color: brown;" data-level="hard">Сложный</div>
+                </div>
+            </div>
+            <div class="timer-wrap">
+                Времени осталось: 
+                <div class="timer"></div>
+            </div>
+            
+            <div class="levels-container" style="display: none;">
+                <h4>Уровень:</h4>
+                <span class="current-level">1</span> / <span class="levels-count">2</span>
+                <button class="skip">Перегенерировать</button>
+            </div>
+            <div class="containers-wrap"></div>
+        </container>
+        
+    </body>
+</html>

@@ -1,0 +1,140 @@
+.containers-wrap {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.containers-wrap .container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    padding: 12px 2px;
+    width: 200px;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+.containers-wrap .container .indicator {
+    background-color: rgb(149 213 213 / 56%);
+    margin: 2px 4px;
+    height: 40px;
+}
+
+.containers-wrap .container .indicator.jam {
+    background-color: rgba(218, 45, 74, 0.959) !important;
+}
+
+
+body.-take {
+    cursor: url(cursor.cur), auto !important;
+}
+
+body.-take .containers-wrap .container {
+    cursor: url(cursor.cur), auto !important;
+}
+
+body.-take .containers-wrap .container:hover {
+    box-shadow: 12px 12px 2px 1px rgba(149, 213, 213, .2);
+}
+
+#player_container {
+    border-color: #33e94b;
+}
+
+.victory_text {
+    text-align: center;
+    font-size: 42px;
+}
+
+.reload-button {
+    width: 200px;
+    height: 50px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.skip {
+    width: 200px;
+    height: 40px;
+    background-color: brown;
+    color: white;
+    border: none;
+    margin: 25px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.levels-container {
+    margin: 25px auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+h4 {
+    margin: 15px 0;
+}
+
+.reload-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.choose-level {
+    display: flex;
+    justify-content: center;
+}
+
+.choose-level .level-button {
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: white;
+}
+
+.level-container {
+    text-align: center;
+}
+
+.choose-level {
+    text-align: center;
+}
+
+.timer-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    min-height: 34px;
+}
+
+.timer {
+    font-size: 30px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+#player_container .indicator:nth-child(-n+2) {
+    background-color: #e59e9e;
+}
+
+.replay-button {
+    padding: 12px 15px;
+    background-color: #5ee06f;
+    color: white;
+    cursor: pointer;
+}
+
